@@ -1,6 +1,6 @@
 const notas = [7.7, 6.5, 5.2, 8.9, 3.6, 7.1, 9.8]
 
-// Sem callbac
+// Sem callback
 const notasBaixas1 = []
 
 for (let i in notas) {
