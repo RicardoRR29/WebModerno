@@ -6,7 +6,27 @@
     <title>CSS Selectors</title>
     <link rel="stylesheet" href="css/tag.css">
     <style>
-        /* ... */
+        /* #aninhado > div pegar o elemento(filho direto) div dentro de aninhado */ 
+        
+        /* p + ul seleciona o elemento que está logo depois */
+
+        /* p ~ ol : filho que tem o mesmo pai que p(estando p anterior a ol)*/
+        
+        /*[feira] todos os elementos com atributo feira*/
+        
+        /*[feira=casa] elementos com atributo feira = casa exatamente*/
+        
+        /*[feira~=casa] elementos com atributo feira = elementos podendo ter mais valores*/
+        
+        /*[feira*=sa] ve se está contido "sa"*/
+
+        /*span:nth-child(1) primeiro filho de alguem se for span*/
+        /* section > :nth-child(odd) filhos impares de section*/
+        /*section > span:nth-of-type(2) segundo elemento do tipo span*/
+        section > span:nth-of-type(2){
+            color: yellow;
+            background-color: red;
+        }
     </style>
 </head>
 
@@ -29,7 +49,7 @@
             </ol>
             <div id='aninhado' class='tag'>
                 <div class="tag">
-                    <section class='tag'>
+                    <section class='tag nolabel'>
                         <span class='tag'>1</span>
                         <p class='tag'>2</p>
                         <span class='tag'>3</span>
