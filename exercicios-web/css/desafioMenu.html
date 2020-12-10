@@ -7,7 +7,85 @@
     <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <style>
-        /* ... */
+        * {
+            margin: 0px;
+        }
+
+        header {
+            background-color: rgb(41, 39, 39);
+            position: relative;
+            padding: 20px;
+            width: 100%;
+            margin: 0px;
+            height: 140px;
+            box-shadow: 0px 5px 4px #569ef8;
+        }
+        img {
+            height: 120px;
+        }
+        nav, aside {
+            display: none;
+        }
+        div{
+            display: inline-block;
+        }
+        
+        button {
+            position: absolute;
+            right: 20px;
+            height: 70px;
+            width: 70px;
+            margin: 30px;
+        }
+        .botao {
+            background-color: red;
+            border-radius: 50px;
+        }
+
+        @media (min-width: 1000px){
+            button {
+                display: none;
+            }
+        }
+        
+        @media (min-width: 1000px) {
+            header {
+                height: 60px;
+            }
+            img {
+                height: 50px;
+            }
+            .menu, aside {
+                display: inline-block;
+                font-size: 35px;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            li {
+                display: inline-block;
+                color: white;
+            }
+            a {
+                color: white;
+                text-decoration: none;
+                padding: 10px 10px;
+            }
+            a:hover {
+                background-color: #569ef8;
+            }
+            aside  {
+                display: none;
+            }
+
+        }
+        @media (min-width: 1500px) {
+            aside {
+                display: inline-block;
+                
+            }
+        }
+        
+        
+        
     </style>
 </head>
 
