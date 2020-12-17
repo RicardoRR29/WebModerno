@@ -31,6 +31,47 @@
         <button wm-submit>Pesquisar</button>
     </form>
     <script>
-        // ...
+        // const submit = document.querySelector('[wm-submit]')
+        // submit.onclick = function(e) {
+        //     e.preventDefault()
+
+        //     const form = e.target.parentNode
+        //     const formData = new FormData(form)
+        //     formData.append('ajax', true)
+        //     console.log(formData.get('q'))
+        //     console.log(formData.has('hl'))
+
+        //     // contexto fixo
+        //     for (let dado of formData) {  // não deixa o dado visível fora do for
+        //         console.log(dado)
+        //     }
+
+        //     console.log(window.dado)
+
+        //     //contexto global
+        //     for (dado of formData) {  // deixa o dado visível fora do for
+        //         console.log(dado)
+        //     }
+
+        //     console.log(window.dado)
+        // }
+        
+        
+        const submit = document.forms[0]
+        submit.onsubmit = function(e) {
+            e.preventDefault()
+
+            const form = e.target
+            const formData = new FormData(form)
+            formData.append('ajax', true)
+            console.log(formData.get('q'))
+            console.log(formData.has('hl'))
+
+            // contexto fixo
+            for (let dado of formData) {  // não deixa o dado visível fora do for
+                console.log(dado)
+            }
+
+        }
     </script>
 </body>
