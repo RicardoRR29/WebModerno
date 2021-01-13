@@ -28,4 +28,17 @@ app.post('/upload', (req, res) => {
     })
 })
 
+app.post('/formulario', (req, res) => {
+    res.send({
+        ...req.body,
+        id: 1
+    })
+})
+
+app.get('/parOuImpar/:numero', (req, res) => {
+    //req.body
+    //req.query
+    //req.params
+    const par = parseInt()
+})
 app.listen(8080, () => console.log('Executando...'))
